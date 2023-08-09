@@ -1,0 +1,26 @@
+{{#each erros}}
+
+<div class="alert alert-danger">{{texto}}</div>
+
+{{else}}
+
+{{/each}}
+
+<h3>Editar Usuário</h3>
+<div class="card">
+<div class="card-body">
+
+    <form action="/admin/usuarios/edit" method="POST">
+    <input type="hidden" name="id" value="{{usuario._id}}">
+    <label for="nome">Nome: </label>
+    <input type="text" id="nome" name="nome" placeholder="Nome do Usuário" class="form-control" value="{{usuario.nome}}">
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" placeholder="Email do Usuário" class="form-control" value="{{usuario.email}}">
+    <label for="eadmin">É administrador:</label>
+    <input type="text" id="eadmin" name="eadmin" placeholder="Permissão" class="form-control" value="{{usuario.eAdmin}}">
+    <br>
+    <button type="submit" class="btn btn-success">Editar Usuário</button>
+</form>
+
+</div>
+</div>
