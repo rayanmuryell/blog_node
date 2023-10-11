@@ -28,15 +28,6 @@ https://www.mongodb.com/
 
 ------------
 
-
-
-## Banco de Dados:
-
-Após a instalação, você precisará criar um banco de dados dentro do MONGODB chamado **blogapp** e as collections **categorias**, **postagens**, **usuarios**.
-
-
-------------
-
 ## Iniciando o projeto:
 
 
